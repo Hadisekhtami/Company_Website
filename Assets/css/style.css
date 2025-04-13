@@ -1,0 +1,369 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&display=swap');
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    background: #fff;
+}
+a{
+    text-decoration: none;
+    color: white;
+}
+p{
+    line-height: 1.6;
+    margin: 10px 0px;
+}
+ul{
+    list-style: none;
+}
+h1,h2{
+    font-size: 2.5rem;
+    line-height: 1.6;
+}
+.btn{
+    display: inline-block; 
+    max-width: fit-content;
+    margin: auto;
+    margin-top: 15px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+}
+.btn:hover{
+   opacity: 0.9;
+}
+.btn-primary{
+    background-color: #159e35;
+}
+.btn-outline{
+    border: 1px solid white;
+    border-radius: 5px;
+}
+.btn-outline:hover{
+    background-color: white;
+    color: black;
+  } 
+.text-primary{
+    color: #159e35;
+}
+
+/* Header */
+#header{
+    background: url('../images/showcase.jpg') no-repeat center center/cover;
+    height: 100vh;
+    position: relative;
+    
+}
+#header .container{
+    width: 100%;
+    height:auto;
+    position: fixed;
+    padding: 20px;   
+    top: 0;
+}
+#header .container.scrolled {
+    background: #282828;
+    opacity: 0.9;
+    transition: all 0.5s ease-in-out;
+}
+#header::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.6);
+}
+#header * {
+    z-index:1;
+}
+#navbar ul {
+   display: flex;
+   justify-content: end;
+   line-height: 1.6;
+   margin-top: -60px;
+}
+#navbar ul li {
+    padding: 15px;
+}
+#navbar ul li:hover {
+    border-bottom: #28a745 2px solid;
+}
+#logo{ 
+    display: flex;
+    color: white;
+}
+#header .content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    height: 100%;
+    padding: 300px 20px;
+}
+#header .content > *{
+    color: white!important;
+    text-align: center;       
+}
+
+/* #About */
+#about ,#team{
+    height: auto;
+    background-color: rgb(251, 247, 243);
+}
+#about .container{
+    display: flex;
+    flex-direction: row!important;
+}
+#about .about-info{
+    padding: 20px;
+    line-height: 1.6;
+    text-align: center;
+}
+#about .about-info i{
+    background-color: #28a745;
+    border-radius: 50%;
+    padding: 20px;
+    max-width: fit-content;
+    margin: auto;
+}
+#about .about-info i,p,h3{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: black!important;
+    margin-top: 10px;
+}
+
+/* solutions */
+#solutions {
+    display: flex;
+    flex-direction: row-reverse;
+}
+#solutions  .right{
+    width: 50%;
+    background-color: #28a745;
+}
+#solutions  .left{
+    width: 50%;
+   
+}
+#solutions  .left img{
+    width: 100%;
+    height: 100%;
+    
+}
+#solutions  .right .content  {
+    color: white!important;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 50px;
+    margin-top: 50px;
+}
+/* #solutions  .right .content p {
+    text-align: left;
+    color: white!important;
+    
+} */
+/* #solutions .btn-outline{
+    display: inline-block; 
+    max-width: fit-content;
+    margin-top: 20px;   
+} */
+/* #solutions .btn-outline:hover{
+  background-color: white;
+  color: black;
+} */
+
+
+/* Cases */
+#cases .container {
+   padding: 30px;
+    margin: auto;
+}
+.section-header{
+   text-align: center!important;
+    line-height: 1.6;
+    padding: 10px;
+    display: block;
+    margin: auto;
+}
+#cases .container .row{
+    display: flex; 
+}
+#cases .container .row .col{
+    width:25%;   
+}
+#cases .container .row img{
+    width: 100%;   
+   
+}
+#cases .container .row img:hover{
+   opacity: 0.8;   
+}
+/* Blog */
+#blog {
+    display: flex;
+    flex-direction: row-reverse;
+}
+#blog  .right{
+    width: 50%;
+    background: #0284d0;
+}
+#blog  .left{
+    width: 50%;
+   
+}
+#blog  .left img{
+    width: 100%;
+    height: 100%;
+    
+}
+#blog  .right .content {
+    color: white!important;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 50px;
+    margin-top: 50px;
+}
+/* #blog  .right .content p {
+    text-align: left;
+    color: white!important;
+    
+} */
+
+/* Team */
+#team{
+    margin-top: 50px;
+
+}
+#team .container{
+    display: flex;
+    max-width: 1400px;
+    margin: auto;
+}
+#team .container .col{
+   width: 33.3%;
+   padding: 30px;
+}
+#team .container .col h4,p{
+   text-align: center;
+   line-height: 1.6;
+}
+
+#team .container .col img{
+    width: 100%;
+    border-radius: 50%;
+}
+/* Contact */
+#contact {
+    display: flex;
+    flex-direction: row-reverse;
+    margin-top: 50px;
+
+}
+#contact  .right{
+    width: 50%;
+}
+#contact .right .form h2{
+    color: rgb(48, 48, 48);
+}
+#contact  .right .form {
+    color: white!important;
+    margin-top: 80px;
+    padding: 20px;
+}
+#contact  .right .form input{
+    width: 100%;
+    padding: 20px;
+    margin-top: 10px;
+    border: none;
+    border-radius: 3px;
+}
+#contact .right .form input[type="submit"]{
+    width: 100%!important;
+    background-color: #28a745;
+    color: white;
+    padding:12px 0px;
+    margin-top: 20px;
+    font-size: 1rem;
+}
+#contact .right  .form input[type="submit"]:hover{
+    background-color: #159e35; 
+}
+#contact  .left{
+    width: 50%; 
+}
+#contact  .left img{
+    width: 100%;
+    height: 100%;  
+}
+#footer{
+    margin-top: 50px;
+    background-color: #333;
+}
+#footer .social{
+    display: flex;
+   justify-content: center;
+}
+#footer .social a{
+    margin-top: 5px;
+    padding: 10px;
+}
+#footer .Copyright{
+    color: white!important;
+    padding: 10px;
+}
+@media screen and (max-width:768px){
+   #navbar ul{
+ 
+   width: 100%;
+   justify-content: center;
+   margin-top: 20px;
+   }
+   #logo {
+    justify-content: center;
+    margin-bottom: 20px;
+   
+   }
+   #about .container{
+    flex-direction: column!important;
+    margin: auto;
+   }
+   #solutions,#blog,#contact{
+    flex-direction: column;
+   }
+   #solutions .right ,#blog .right ,#contact .right{
+     width: 100%;
+     order: 2;
+   }
+   #solutions .left ,#blog .left , #contact .left{ 
+    width: 100%;
+    order: 1;
+  }
+  #solutions  .right .content{
+    margin-top: 15px;
+  }
+  #cases .container .row{
+    flex-direction: column;
+}
+#cases .container .row .col{
+    width:100%;   
+}
+#team .container{
+   flex-direction: column;
+}
+#team .container .col{
+    width: 70%;
+    margin: auto;
+ }
+}
